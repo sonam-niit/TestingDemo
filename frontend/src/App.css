@@ -1,0 +1,32 @@
+.App{
+  background-color: #adb5bd;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+/* Hide the action buttons by default */
+.todo-item {
+  position: relative;
+}
+
+.todo-actions {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.todo-item:hover .todo-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.todo-actions button {
+  transition: opacity 0.3s ease;
+}
+
+.todo-item:hover .todo-actions button {
+  opacity: 1;
+}
